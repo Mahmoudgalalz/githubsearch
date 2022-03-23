@@ -1,0 +1,78 @@
+nav h2{
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px black solid;
+    
+}
+.cont{
+    display: flex;
+    position:relative;
+    top: 2em;
+    left: 50em;
+    width: 4em;
+}
+#search{
+    border: 0;
+    padding: 8px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(224, 239, 252);
+    border-end-end-radius: 5px;
+    border-top-right-radius: 5px;
+    transition-duration: 0.5s;
+}
+#username{
+    padding: 8px;
+    border: 0;
+    font-size: 16px;
+    color: rgb(58, 58, 58);
+    background-color: rgb(224, 239, 252);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#search:hover{
+    color: rgb(68, 68, 68);
+    background-color: rgb(117, 191, 255);
+}
+#username:focus-visible{
+    border: 1px solid;
+    border-color: rgb(224, 239, 252);
+}
+
+.prop{
+    position: relative;
+    top: 10em;
+    left: 42em;
+    background-color: rgb(224, 239, 252);
+    border-radius: 18px;
+    width: 30em;
+    height: 15em;
+    transition-duration: 0.5s;
+}
+.prop:hover{
+    background-color: rgb(176, 218, 218);
+}
+.temp img{
+    position: absolute;
+    top: -2em;
+    left: 25em;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.temp{
+    padding: 30px;
+}
+.follow ul{
+    list-style: none;
+    display: flex;
+}
+.follow
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.follow ul li{
+    margin-right: 20px;
+}
