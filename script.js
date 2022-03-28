@@ -6,7 +6,7 @@ let data;
 //hide the core
 document.getElementById('prop').style.display='none';
 
-
+    
 function opra(){
    users = document.getElementById('username').value;
    url=api_url+users;
@@ -15,15 +15,23 @@ function opra(){
 }
 
 async function getapi(url) {
-    // Storing response
-    const response = await fetch(url);
-    // Storing data in form of JSON
-    data = await response.json();
-    console.log(data);
     
-    show(data);
+        const response = await fetch(url);
+        data = await response.json();
+        if(data.name===undefined){
+            error();
+        }
+        else{
+            show(data);
+        }
+    
 }
 
+function error(){
+    document.getElementById('prop').style.display='none';
+    
+    document.getElementById("forError").innerHTML="user not found"
+}
 
 function show(data) {
     document.getElementById('prop').style.display='block';
