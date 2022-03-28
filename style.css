@@ -4,12 +4,21 @@ nav h2{
     border-bottom: 2px black solid;
     
 }
+h1{
+    color: rgb(255, 91, 91);
+    font-size: 12px;
+    padding: 120px;
+    text-align: center;
+}
 .cont{
     display: flex;
     position:relative;
     top: 2em;
     left: 50em;
     width: 4em;
+}
+#bio{
+    font-size: 14px;
 }
 #search{
     border: 0;
